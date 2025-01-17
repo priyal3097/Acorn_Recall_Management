@@ -1,0 +1,364 @@
+﻿/*body {
+    margin:0;
+    padding:0;
+}
+section{
+    width:100vw;
+    height:100vh;
+    background-image:url('Image/Searchbg.jpg');
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sec2{
+
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}*/
+
+/* DEFAULTS
+----------------------------------------------------------*/
+
+body {
+    /*background: #b6b7bc;*/
+    height: 100%;
+    background-image: url('../Images/img/backimg2.jpg');
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    font-size: .80em;
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /*color: #696969;*/
+}
+
+html {
+    height: 100%
+}
+
+a:link, a:visited {
+    color: #034af3;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #034af3;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.6em;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-size: 1.6em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+h5, h6 {
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2 {
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page {
+    /*960px*/
+    width: 100%;
+    /*height: 100%; */
+    /*background:url('../Images/img/backimg.jpg');*/
+    /*background-color: #fff;*/
+    margin: 0px auto 0px auto;
+    /*border: 1px solid black;*/
+}
+
+.header {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+    .header h1 {
+        font-weight: 700;
+        margin: 0px;
+        padding: 0px 0px 0px 20px;
+        color: #f9f9f9;
+        border: none;
+        line-height: 2em;
+        font-size: 2em;
+    }
+
+.main {
+    padding: 0px 5px;
+    /*margin: 12px 8px 8px 8px;*/
+    margin: 1px 8px 1px 8px;
+    /*min-height: 550px;*/
+    /*min-height: 90%;*/
+    /*min-height:100%;*/
+    height: 100%;
+}
+
+.leftCol {
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer {
+    /*color: #4e5766;*/
+    /*padding: 0px 0px 0px 0px;
+    margin: 0px auto;*/
+    text-align: center;
+    line-height: normal;
+    position: absolute;
+    bottom: -5px;
+    width: 100%;
+    left: 0px;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink {
+    /* width:100%;*/
+}
+
+.Menu {
+    padding: 4px 2px 4px 2px;
+    text-align: left;
+    border: solid;
+    border-color: white;
+    border-width: medium;
+}
+
+    .Menu ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        /*background:#7795BD;*/
+        background: #92D050;
+        /*background:none;*/
+        /*border:1px solid #648ABD;*/
+        opacity: 0.9;
+    }
+
+
+    .Menu li {
+        /*background:#7795BD;*/
+        /*background:none;*/
+        background: #92D050;
+        text-align: left;
+        /* set width if needed.*/
+        width: 265px;
+        /*width:auto;*/
+    }
+
+    .Menu ul li a {
+        text-align: left;
+        color: black;
+        /*padding: 4px 0px 4px;*/
+        padding: 4px 20px;
+        padding-left: 8px !important;
+        /*border:1px solid #648ABD;*/
+        border-bottom: 0;
+    }
+
+    .Menu li a:hover {
+        background-color: #555;
+        color: White;
+    }
+
+    .Menu ul li a {
+        color: Black;
+    }
+
+        .Menu ul li a:active {
+            /*background-color: #465c71;*/
+            background: #92D050;
+            /*background:none;*/
+            color: #cfdbe6;
+            text-decoration: none;
+            font-style: italic;
+        }
+
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset {
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+    fieldset p {
+        margin: 2px 12px 10px 10px;
+    }
+
+    fieldset.login label, fieldset.register label, fieldset.changePassword label {
+        display: block;
+    }
+
+    fieldset label.inline {
+        display: inline;
+    }
+
+legend {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry {
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo {
+    width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.title {
+    display: block;
+    float: left;
+    text-align: left;
+    width: auto;
+}
+
+.loginDisplay {
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+}
+
+.loginDisp {
+    background: url('../Images/Headerbg.png');
+    height: 172px;
+}
+
+.loginDisplay a:link {
+    color: white;
+}
+
+.loginDisplay a:visited {
+    color: white;
+}
+
+.loginDisplay a:hover {
+    color: white;
+}
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.okbutton {
+    font-weight: bold;
+    font-family: Book Antiqua;
+    font-size: 11pt;
+    color: white;
+    background-image: "url('../Images/bbg.JPG')";
+}
+
+.labl {
+    font-weight: bold;
+    font-size: 11pt;
+    font-family: Segoe UI
+}
+
+}
+
+.drpdwn {
+    font-family: 'Book Antiqua';
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.txtbx {
+    /*text-align:center;*/
+    font-weight: bold;
+    font-family: Segoe UI;
+    font-size: 13px;
+    color: #404040;
+}
+
+
+.lblstyle {
+    font-size: 10pt;
+    font-family: Segoe UI;
+    color: #404040;
+}   

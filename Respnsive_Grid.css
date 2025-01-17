@@ -1,0 +1,39 @@
+﻿/* General GridView Styling */
+.responsive-grid {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow: hidden; /* Hide overflow */
+}
+
+    /* Style for the header */
+    .responsive-grid th {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Style for the data rows */
+    .responsive-grid td {
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+/* Optional: Make GridView scrollable */
+.responsive-grid {
+    height: 400px; /* Fixed height */
+    overflow: auto; /* Scrolls if content exceeds */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .responsive-grid {
+        font-size: 12px;
+    }
+
+        .responsive-grid th, .responsive-grid td {
+            padding: 4px;
+        }
+}

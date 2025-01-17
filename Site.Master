@@ -1,0 +1,102 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.master.vb" Inherits="Acorn_Recall_Management.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style>
+        body {
+
+            background-image: url("Image/Master_Background.jpg");
+            background-size: cover; /* Adjust as necessary */
+            background-position: center; /* Optional: adjust the position */
+            background-repeat: no-repeat; /* Optional: prevent repeating the image */
+            /*height : 100%;*/
+            min-height: 100vh;
+             width : 100%;
+            height : 100%;
+            
+        }
+        .auto-style3 {
+            height: 126px;
+            margin-left: 18px;
+            width: 1780px;
+        }
+        .auto-style4 {
+            margin-left: 0px;
+            height: 144px;
+            width: 1780px;
+            margin-right: 0px;
+            margin-top: 19px;
+            margin-bottom: 2px;
+        }
+        .auto-style5 {
+            width: 100%;
+            height: 125px;
+        }
+        .auto-style6 {
+            width: 251px;
+        }
+        .auto-style8 {
+            width: 1079px;
+        }
+        .auto-style9 {
+            width: 1079px;
+            height: 39px;
+        }
+        .auto-style10 {
+            height: 39px;
+            text-align: right;
+        }
+        .auto-style11 {
+            margin-top: 0px;
+        }
+        .auto-style12 {
+            text-align: right;
+        }
+        </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="width: 99%; height: 139px">
+    <form id="form1" runat="server">
+        <div class="auto-style3">
+            <asp:Panel ID="Panel2" runat="server" BorderStyle="Groove" Height="121px" Width="1772px">
+                <table class="auto-style5">
+                    <tr>
+                        <td class="auto-style6" rowspan="4">
+                            <asp:Image ID="Image1" runat="server" CssClass="auto-style11" Height="104px" ImageUrl="~/Image/Acorn_iMAGE.png" Width="251px" />
+                        </td>
+                        <td class="auto-style9"></td>
+                        <td class="auto-style10">
+                            <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" Font-Names="Segoe UI" Font-Size="20pt" Font-Underline="False" ForeColor="#FF3300" NavigateUrl="~/Frm_Errorform.aspx">Log Out</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style12">
+                            <asp:Label ID="LBLUSERNAME" runat="server" Font-Bold="True" Font-Names="Segoe UI" Font-Size="20pt" Font-Underline="False" ForeColor="#FF3300"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style12">
+                            <asp:Label ID="LBLUSERACCESS" runat="server" Font-Bold="True" Font-Names="Segoe UI" Font-Size="20pt" Font-Underline="False" ForeColor="#FF3300"></asp:Label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </asp:Panel>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p class="auto-style4">
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
